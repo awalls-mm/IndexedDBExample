@@ -1,1 +1,1 @@
-# Aretha's IndexedDB Pary
+# Aretha's IndexedDB Party
