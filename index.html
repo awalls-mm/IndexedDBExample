@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>IndexedDB Test</title>
+</head>
+<body>
+    <div class="container">
+            <h1>Aretha's Indexed Party</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Favorite Color</th>
+                        <th>Favorite Food</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="people_holder">
+                </tbody>
+            </table>
+        
+            <form id="new_person">
+                <div class="form_group">
+                    <label for="idb_name">Name</label>
+                    <input type="text" name="name" id="idb_name" />
+                </div>
+                <div class="form_group">
+                    <label for="idb_color">Favorite Color</label>
+                    <input type="text" name="favorite_color" id="idb_color">
+                </div>
+                <div class="form_group">
+                    <label for="idb_food">Favorite Food</label>
+                    <input type="text" name="favorite_food" id="idb_food">
+                </div>
+                <div class="form_group">
+                    <button type="submit">Add</button>
+                </div>
+            </form>
+        
+    </div>
+    
+    <div id="message"></div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
